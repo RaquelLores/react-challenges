@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Counter from './components/Counter';
 import TodoList from './components/TodoList';
 import CharactersApp from './components/CharactersApp';
+import TicTacToe from './components/TicTacToe';
 
 
 const App = () => {
@@ -10,7 +11,8 @@ const App = () => {
   const challenges = [
     { id: 'counter', name: 'Contador', component: <Counter /> },
     { id: 'todos', name: 'Lista Tareas', component: <TodoList /> },
-    { id: 'characters', name: 'Personajes API', component: <CharactersApp /> }
+    { id: 'characters', name: 'Personajes API', component: <CharactersApp /> },
+    { id: 'tictactoe', name: 'Tres en Raya', component: <TicTacToe /> }
   ];
   return (
     <div style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto' }}>
